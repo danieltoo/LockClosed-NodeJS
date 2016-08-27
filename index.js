@@ -7,7 +7,7 @@ var session = require("express-session");
 var router_app=require("./router_user");
 var session_midle = require("./middlewares/session");
 
-var token = '219810775:AAHqN5_2Cj53UCmkezcXN-vLg00qjf6H5js';
+var token = 'token';
 var TelegramBot = require('node-telegram-bot-api');
 var bot = new TelegramBot(token, {polling: true});
 
@@ -20,9 +20,7 @@ var session_admin_midle = require("./middlewares/session_admin");
 var proyecto={
 	nombre:"Cerradura",
 	autor:"Daniel Torres",
-	//idChatTelgram :208014408
-
-	idChatTelgram : 169837458
+	idChatTelgram : //numero de chat telegram
 }
 /*************************************/
 app.set('view engine', 'pug') // se indica que se usara las vistas PUG
@@ -41,7 +39,6 @@ app.use("/estatico",express.static('public')); //servir archivos staticos
 /**************************TELEGRAM*************************************/
 bot.onText(/\/exec (.+)/, function (msg, match) {
   var fromId = msg.from.id;
-  //console.log(typeof fromId);
   var resp = match[1];
   if (resp=="id"){
   	bot.sendMessage(fromId, fromId);	
