@@ -1,0 +1,21 @@
+extends ./layout.pug
+block contenido 
+	div(align="center")
+		if (sesion)
+			h1 Bienvenido
+		else 
+			h1 Necesitas Iniciar Sesión
+	div(class="slide")
+		section(class="galeria" id="galeria")
+			a(href=home  class="fot")
+				img(src="/img/home.png" class="im" width="100" height="100")
+			a(href="https://www.facebook.com/ChakaSuper"  class="fot")
+				img(src="/img/mensaje.png" class="im" width="100" height="100")
+			if (sesion)
+				a(href="/exit"  class="fot")
+					img(src="/img/login.png" class="im" width="100" height="100")
+			else
+				a(href="/login"  class="fot")
+					img(src="/img/login.png"  class="im" width="100" height="100")
+	
+		

@@ -1,0 +1,30 @@
+extends ./layout.pug
+block contenido 
+	div(align="center")
+		form(action="/session_admin",method="POST")
+			div
+				h2 Propietario
+				input(type="hidden"
+					name="admin"
+					id="admin"
+					value="@admin"
+					readonly="true"
+					required="true"
+
+					
+				)
+				label(for="pin") PIN
+				input(type="password",
+					name="pin",
+					placeholder="pin",
+					id="pin"
+					required
+				)
+				input(type="submit" value="Enviar")
+			div(id="status")
+				h3!=status
+
+
+
+		
+

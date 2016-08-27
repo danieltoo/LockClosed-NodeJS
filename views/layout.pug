@@ -1,0 +1,53 @@
+doctype html
+html
+	head
+		title!=title
+		link(rel="shortcut icon" href="/img/home.png")
+		meta(charset ="utf-8")
+		style
+			include css/style.css
+		script
+			include js/func.js
+	body
+		input(type="checkbox" onclick="oculside()" id="check")
+		label(id="icon" for="check")
+			img(src="/img/icone.png")
+		div(class="barra")
+			nav
+				a(href="")
+					div(class="title") 
+						if (sesion)
+							h2(align="center") #{user.username}
+						else
+							h2(align="center") Menú
+				a(href=home)
+					div(class="link" align="center") Home
+						//img(src="/img/home.png" height="42" width="42")
+				a(href="https://www.facebook.com/ChakaSuper")
+					div(class="link" align="center") Contacto
+						//img(src="/img/mensaje.png" height="42" width="42")
+				if (sesion)
+					a(href="/exit")
+						div(class="link" align="center") Cerrar sesión
+							//img(src="/img/login.png" height="42" width="42")
+				else
+					a(href="/login" )
+						div(class="link" align="center" ) Iniciar Sesión 
+							//img(src="/img/login.png" height="42" width="42")		
+		br
+		br
+		br
+		h3(align="center")!=titulo +"\t"+ sesion
+		div(id="content")
+			block contenido
+		p(align="right")
+			if(sesion)
+			else
+				a(href="/login_admin" class=clase) ¿Eres el propietario? 
+		footer
+			p(align="center") &copy;Daniel Torres 
+
+
+
+		
+			

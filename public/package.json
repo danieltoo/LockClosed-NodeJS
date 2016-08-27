@@ -1,0 +1,25 @@
+{
+  "CORS":"Access-Control-Allow-Origin",
+  "name": "Blog",
+  "version": "0.0.1",
+  "description": "Blog de preguntas con imagenes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@Daniel Torres",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "express-sessions": "^1.0.5",
+    "getmac": "^1.2.1",
+    "jade": "^1.11.0",
+    "macaddress": "^0.2.8",
+    "mongoose": "^4.4.20",
+    "node-arp": "^1.0.5",
+    "node-macaddress": "^0.2.4",
+    "pug": "^2.0.0-beta2"
+  }
+}

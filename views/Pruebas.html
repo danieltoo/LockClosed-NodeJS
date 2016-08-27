@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><title>Pagina de inicio</title><meta charset="utf-8"><style>body{
+	background-color: blue;
+	
+}
+
+div{
+	background-color: green;
+	border-width: 300px;
+	border-color: black;
+}
+div.R{
+	background-color: grey;
+	border-width: 300px;
+	border-color: black;
+}
+div.T{
+	background-color: purple;
+	border-width: 300px;
+	border-color: black;
+}
+
+a{
+	color: white;
+}
+footer,nav{
+	background-color: black;
+	color: white;
+}
+.home {
+  background: url("img/Apps-Home-icon.png") no-repeat;
+  background-size: cover;
+}
+</style><script>function revisa() {
+			var password_confirmation=document.getElementById("password_confirmation");
+			var password=document.getElementById("password");
+			var revisado=document.getElementById("revisado");
+			if (password_confirmation.value != password.value){
+					revisado.innerHTML= "No son iguales";
+			}else{
+				revisado.innerHTML= "";
+			}
+		}
+function changeinR() {
+	document.getElementById("R").style.backgroundColor="red"	
+}
+function changeoutR() {
+	document.getElementById("R").style.backgroundColor="grey"
+}
+function changeinT() {
+	document.getElementById("T").style.backgroundColor="red"	
+}
+function changeoutT() {
+	document.getElementById("T").style.backgroundColor="purple"
+}
+
+</script></head><body><nav><ul><li> <a href="#"><img src="img/home.png"></a></li><li> <a href="/Contacto">Contacto</a></li><li> <a href="/login">Iniciar Sesión</a></li></ul></nav><h3>Cerradura</h3><div align="center"><h1>Necesitas Iniciar sesión o Registrarte</h1><br><br><a class="R" href="/signup" id="R" onmouseenter="changeinR()" onmouseout="changeoutR()">Registrarse</a><br><a class="T" href="/login" id="T" onmouseenter="changeinT()" onmouseout="changeoutT()">Iniciar sesión</a></div><div align="rigth"><a href="/login_admin">Ingresar como Administrador </a></div><footer><p align="center">Daniel Torres </p></footer>
+<form action="" method="">
+	
+</form>
+</body></html>

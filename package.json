@@ -1,0 +1,25 @@
+{
+  "name": "Cerradura",
+  "version": "0.0.2",
+  "description": "Sistema de seguridad cerradura",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@Daniel Torres",
+  "license": "APACHE 2",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "express-sessions": "^1.0.5",
+    "getmac": "^1.2.1",
+    "jade": "^1.11.0",
+    "macaddress": "^0.2.8",
+    "mongoose": "^4.4.20",
+    "node-arp": "^1.0.5",
+    "node-macaddress": "^0.2.4",
+    "node-telegram-bot-api": "^0.23.3",
+    "pug": "^2.0.0-beta2"
+  }
+}

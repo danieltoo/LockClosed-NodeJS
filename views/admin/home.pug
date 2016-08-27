@@ -1,0 +1,24 @@
+extends ../layout.pug
+block contenido 
+	div(align="center")
+		h1 Bienvenido  #{user.username}
+		div
+			a(href="/descargar/cerradura.apk") Descargar APP
+			br
+			span Descarga la aplicación movil para dispositivo android asi tendras un control mas rapido al ingresar al control. 
+		div
+			a(href="#") Cambiar PIN
+			br
+			span Es recomendable modificar tu Pin de ingreso contantemente. 
+		div
+			a(href="#") Usuarios
+			br
+			span Puedes Visualizar, Crear , Modificar y Eliminar Usuarios.
+		div
+			a(href="/admin/alter") Modificar datos de contacto
+			br
+			span Puedes verificar o modificar tus datos de contacto que seran utilizados para notificarte cualquier tipo de problema que surga con tu cuenta.
+		div
+			a(href="#") Control 
+			br
+			span Si no cuentas con uns dispositivo android puedes acceder y controlarlo con este control, aun así es mas recomendable controlar con la aplicacion por cuestiones de seguridad.

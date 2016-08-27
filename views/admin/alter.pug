@@ -1,0 +1,57 @@
+extends ../layout.pug
+block contenido 
+	div(align="center")
+		form(action="/admin/alteradmin" method="POST")
+			div
+				input(
+					type="text"
+					readonly
+					hidden
+					value= sesion
+					name="id"
+				)
+				input(
+					type="text"
+					value= user.username
+					id="usuario"
+					readonly
+					onclick="function_user()"
+					name="username"
+					hidden
+				)
+
+			div 
+				h2 Email:  
+					input(
+						type="text"
+						value= user.email
+						id="email"
+						name="email"
+						readonly
+						onclick="emmmm()"
+					)
+
+			div 
+				h2 Telefono: 
+					input(
+						type="text"
+						value= user.telefono
+						id="telefono"
+						name="telefono"
+						readonly
+						onclick="tel()"
+					)
+
+			div 
+				h2 Facebook:
+					input(
+						type="text"
+						value= user.facebook
+						id="facebook"
+						name="facebook"
+						readonly
+						onclick="face()"
+					)
+				button Guardar
+		label Si deseas cambiar tu contraseña es necesario notificar al Propietario y pedir su autorización
+			

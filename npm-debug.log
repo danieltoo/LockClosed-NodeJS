@@ -1,0 +1,467 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'sleep' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.29
+4 warn package.json Cerradura@0.0.2 No repository field.
+5 warn package.json Cerradura@0.0.2 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'sleep', null ]
+8 verbose cache add name=undefined spec="sleep" args=["sleep",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'sleep',
+9 verbose parsed url   path: 'sleep',
+9 verbose parsed url   href: 'sleep' }
+10 silly lockFile c3ca5f78-sleep sleep
+11 verbose lock sleep /home/deadpool/.npm/c3ca5f78-sleep.lock
+12 silly lockFile c3ca5f78-sleep sleep
+13 silly lockFile c3ca5f78-sleep sleep
+14 verbose addNamed [ 'sleep', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile e2b4ed60-sleep sleep@
+17 verbose lock sleep@ /home/deadpool/.npm/e2b4ed60-sleep.lock
+18 silly addNameRange { name: 'sleep', range: '*', hasData: false }
+19 verbose request where is /sleep
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id 483228ac8195257c
+22 verbose url raw /sleep
+23 verbose url resolving [ 'https://registry.npmjs.org/', './sleep' ]
+24 verbose url resolved https://registry.npmjs.org/sleep
+25 verbose request where is https://registry.npmjs.org/sleep
+26 info trying registry request attempt 1 at 19:49:35
+27 verbose etag "8IEFEDYWYB38NP701Z30947N8"
+28 http GET https://registry.npmjs.org/sleep
+29 http 304 https://registry.npmjs.org/sleep
+30 silly registry.get cb [ 304,
+30 silly registry.get   { date: 'Sun, 17 Jul 2016 00:50:22 GMT',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     'cache-control': 'max-age=300',
+30 silly registry.get     etag: '"8IEFEDYWYB38NP701Z30947N8"',
+30 silly registry.get     age: '183',
+30 silly registry.get     connection: 'keep-alive',
+30 silly registry.get     'x-served-by': 'cache-dfw1848-DFW',
+30 silly registry.get     'x-cache': 'HIT',
+30 silly registry.get     'x-cache-hits': '1',
+30 silly registry.get     'x-timer': 'S1468716622.923875,VS0,VE0',
+30 silly registry.get     vary: 'Accept-Encoding' } ]
+31 verbose etag https://registry.npmjs.org/sleep from cache
+32 silly addNameRange number 2 { name: 'sleep', range: '*', hasData: true }
+33 silly addNameRange versions [ 'sleep',
+33 silly addNameRange   [ '1.0.0',
+33 silly addNameRange     '1.0.1',
+33 silly addNameRange     '1.0.2',
+33 silly addNameRange     '1.1.0',
+33 silly addNameRange     '1.1.1',
+33 silly addNameRange     '1.1.2',
+33 silly addNameRange     '1.1.3',
+33 silly addNameRange     '1.1.4',
+33 silly addNameRange     '1.1.5',
+33 silly addNameRange     '1.1.6',
+33 silly addNameRange     '1.1.7',
+33 silly addNameRange     '1.1.8',
+33 silly addNameRange     '1.2.0',
+33 silly addNameRange     '2.0.0',
+33 silly addNameRange     '3.0.0',
+33 silly addNameRange     '3.0.1' ] ]
+34 verbose addNamed [ 'sleep', '3.0.1' ]
+35 verbose addNamed [ '3.0.1', '3.0.1' ]
+36 silly lockFile 284a7456-sleep-3-0-1 sleep@3.0.1
+37 verbose lock sleep@3.0.1 /home/deadpool/.npm/284a7456-sleep-3-0-1.lock
+38 silly lockFile 284a7456-sleep-3-0-1 sleep@3.0.1
+39 silly lockFile 284a7456-sleep-3-0-1 sleep@3.0.1
+40 silly lockFile e2b4ed60-sleep sleep@
+41 silly lockFile e2b4ed60-sleep sleep@
+42 silly resolved [ { name: 'sleep',
+42 silly resolved     version: '3.0.1',
+42 silly resolved     main: 'index.js',
+42 silly resolved     description: 'Add sleep() and usleep() to nodejs',
+42 silly resolved     homepage: 'http://github.com/ErikDubbelboer/node-sleep',
+42 silly resolved     author: { name: 'Erik Dubbelboer', email: 'erik@dubbelboer.com' },
+42 silly resolved     license: 'MIT',
+42 silly resolved     engines: { node: '>=0.4.0' },
+42 silly resolved     keywords: [ 'sleep', 'usleep' ],
+42 silly resolved     repository:
+42 silly resolved      { type: 'git',
+42 silly resolved        url: 'https://github.com/ErikDubbelboer/node-sleep.git' },
+42 silly resolved     dependencies: { nan: '>=2.0.0' },
+42 silly resolved     gypfile: true,
+42 silly resolved     scripts: { install: 'node-gyp rebuild' },
+42 silly resolved     gitHead: 'd4824c0466f893d0142c6715acd36c47bf87fac9',
+42 silly resolved     bugs: { url: 'https://github.com/ErikDubbelboer/node-sleep/issues' },
+42 silly resolved     _id: 'sleep@3.0.1',
+42 silly resolved     _shasum: 'be4d17c579360e07e04ed8172ba2b10a69054df3',
+42 silly resolved     _from: 'sleep@',
+42 silly resolved     _npmVersion: '2.14.12',
+42 silly resolved     _nodeVersion: '4.2.4',
+42 silly resolved     _npmUser: { name: 'erikdubbelboer', email: 'erik@dubbelboer.com' },
+42 silly resolved     maintainers: [ [Object] ],
+42 silly resolved     dist:
+42 silly resolved      { shasum: 'be4d17c579360e07e04ed8172ba2b10a69054df3',
+42 silly resolved        tarball: 'https://registry.npmjs.org/sleep/-/sleep-3.0.1.tgz' },
+42 silly resolved     _npmOperationalInternal:
+42 silly resolved      { host: 'packages-6-west.internal.npmjs.com',
+42 silly resolved        tmp: 'tmp/sleep-3.0.1.tgz_1454489151975_0.026494406163692474' },
+42 silly resolved     directories: {},
+42 silly resolved     _resolved: 'https://registry.npmjs.org/sleep/-/sleep-3.0.1.tgz',
+42 silly resolved     readme: 'ERROR: No README data found!' } ]
+43 info install sleep@3.0.1 into /home/deadpool/Proyectos/NODE/Cerradura
+44 info installOne sleep@3.0.1
+45 verbose node_modules/sleep unbuild
+46 verbose tar unpack /home/deadpool/.npm/sleep/3.0.1/package.tgz
+47 silly lockFile af7c5ba7-ODE-Cerradura-node-modules-sleep tar:///home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep
+48 verbose lock tar:///home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep /home/deadpool/.npm/af7c5ba7-ODE-Cerradura-node-modules-sleep.lock
+49 silly lockFile 291413cc-pool-npm-sleep-3-0-1-package-tgz tar:///home/deadpool/.npm/sleep/3.0.1/package.tgz
+50 verbose lock tar:///home/deadpool/.npm/sleep/3.0.1/package.tgz /home/deadpool/.npm/291413cc-pool-npm-sleep-3-0-1-package-tgz.lock
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 silly gunzTarPerm extractEntry package.json
+53 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+54 silly gunzTarPerm extractEntry .npmignore
+55 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+56 silly gunzTarPerm extractEntry README.md
+57 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+58 silly gunzTarPerm extractEntry index.js
+59 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+60 silly gunzTarPerm extractEntry test.js
+61 silly gunzTarPerm modified mode [ 'test.js', 436, 420 ]
+62 silly gunzTarPerm extractEntry LICENSE.txt
+63 silly gunzTarPerm modified mode [ 'LICENSE.txt', 436, 420 ]
+64 silly gunzTarPerm extractEntry binding.gyp
+65 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+66 silly gunzTarPerm extractEntry sleep.cc
+67 silly gunzTarPerm modified mode [ 'sleep.cc', 436, 420 ]
+68 silly lockFile af7c5ba7-ODE-Cerradura-node-modules-sleep tar:///home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep
+69 silly lockFile af7c5ba7-ODE-Cerradura-node-modules-sleep tar:///home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep
+70 silly lockFile 291413cc-pool-npm-sleep-3-0-1-package-tgz tar:///home/deadpool/.npm/sleep/3.0.1/package.tgz
+71 silly lockFile 291413cc-pool-npm-sleep-3-0-1-package-tgz tar:///home/deadpool/.npm/sleep/3.0.1/package.tgz
+72 info preinstall sleep@3.0.1
+73 verbose readDependencies using package.json deps
+74 verbose readDependencies using package.json deps
+75 verbose cache add [ 'nan@>=2.0.0', null ]
+76 verbose cache add name=undefined spec="nan@>=2.0.0" args=["nan@>=2.0.0",null]
+77 verbose parsed url { protocol: null,
+77 verbose parsed url   slashes: null,
+77 verbose parsed url   auth: null,
+77 verbose parsed url   host: null,
+77 verbose parsed url   port: null,
+77 verbose parsed url   hostname: null,
+77 verbose parsed url   hash: null,
+77 verbose parsed url   search: null,
+77 verbose parsed url   query: null,
+77 verbose parsed url   pathname: 'nan@%3E=2.0.0',
+77 verbose parsed url   path: 'nan@%3E=2.0.0',
+77 verbose parsed url   href: 'nan@%3E=2.0.0' }
+78 verbose cache add name="nan" spec=">=2.0.0" args=["nan",">=2.0.0"]
+79 verbose parsed url { protocol: null,
+79 verbose parsed url   slashes: null,
+79 verbose parsed url   auth: null,
+79 verbose parsed url   host: null,
+79 verbose parsed url   port: null,
+79 verbose parsed url   hostname: null,
+79 verbose parsed url   hash: null,
+79 verbose parsed url   search: null,
+79 verbose parsed url   query: null,
+79 verbose parsed url   pathname: '%3E=2.0.0',
+79 verbose parsed url   path: '%3E=2.0.0',
+79 verbose parsed url   href: '%3E=2.0.0' }
+80 verbose addNamed [ 'nan', '>=2.0.0' ]
+81 verbose addNamed [ null, '>=2.0.0' ]
+82 silly lockFile b61dfd9c-nan-2-0-0 nan@>=2.0.0
+83 verbose lock nan@>=2.0.0 /home/deadpool/.npm/b61dfd9c-nan-2-0-0.lock
+84 silly addNameRange { name: 'nan', range: '>=2.0.0', hasData: false }
+85 verbose request where is /nan
+86 verbose request registry https://registry.npmjs.org/
+87 verbose url raw /nan
+88 verbose url resolving [ 'https://registry.npmjs.org/', './nan' ]
+89 verbose url resolved https://registry.npmjs.org/nan
+90 verbose request where is https://registry.npmjs.org/nan
+91 info trying registry request attempt 1 at 19:49:36
+92 verbose etag "2POVJEDCD6LOO0Y53S1HJ4UMJ"
+93 http GET https://registry.npmjs.org/nan
+94 http 304 https://registry.npmjs.org/nan
+95 silly registry.get cb [ 304,
+95 silly registry.get   { date: 'Sun, 17 Jul 2016 00:50:23 GMT',
+95 silly registry.get     via: '1.1 varnish',
+95 silly registry.get     'cache-control': 'max-age=300',
+95 silly registry.get     etag: '"2POVJEDCD6LOO0Y53S1HJ4UMJ"',
+95 silly registry.get     age: '150',
+95 silly registry.get     connection: 'keep-alive',
+95 silly registry.get     'x-served-by': 'cache-dfw1831-DFW',
+95 silly registry.get     'x-cache': 'HIT',
+95 silly registry.get     'x-cache-hits': '2',
+95 silly registry.get     'x-timer': 'S1468716623.897180,VS0,VE0',
+95 silly registry.get     vary: 'Accept-Encoding' } ]
+96 verbose etag https://registry.npmjs.org/nan from cache
+97 silly addNameRange number 2 { name: 'nan', range: '>=2.0.0', hasData: true }
+98 silly addNameRange versions [ 'nan',
+98 silly addNameRange   [ '0.3.0-wip',
+98 silly addNameRange     '0.3.0-wip2',
+98 silly addNameRange     '0.3.0',
+98 silly addNameRange     '0.3.1',
+98 silly addNameRange     '0.3.2',
+98 silly addNameRange     '0.4.0',
+98 silly addNameRange     '0.4.1',
+98 silly addNameRange     '0.4.2',
+98 silly addNameRange     '0.4.3',
+98 silly addNameRange     '0.4.4',
+98 silly addNameRange     '0.5.0',
+98 silly addNameRange     '0.5.1',
+98 silly addNameRange     '0.5.2',
+98 silly addNameRange     '0.6.0',
+98 silly addNameRange     '0.7.0',
+98 silly addNameRange     '0.7.1',
+98 silly addNameRange     '0.8.0',
+98 silly addNameRange     '1.0.0',
+98 silly addNameRange     '1.1.0',
+98 silly addNameRange     '1.1.1',
+98 silly addNameRange     '1.1.2',
+98 silly addNameRange     '1.2.0',
+98 silly addNameRange     '1.3.0',
+98 silly addNameRange     '1.4.0',
+98 silly addNameRange     '1.4.1',
+98 silly addNameRange     '1.5.0',
+98 silly addNameRange     '1.4.2',
+98 silly addNameRange     '1.4.3',
+98 silly addNameRange     '1.5.1',
+98 silly addNameRange     '1.5.2',
+98 silly addNameRange     '1.6.0',
+98 silly addNameRange     '1.5.3',
+98 silly addNameRange     '1.6.1',
+98 silly addNameRange     '1.6.2',
+98 silly addNameRange     '1.7.0',
+98 silly addNameRange     '1.8.0',
+98 silly addNameRange     '1.8.1',
+98 silly addNameRange     '1.8.2',
+98 silly addNameRange     '1.8.3',
+98 silly addNameRange     '1.8.4',
+98 silly addNameRange     '1.9.0',
+98 silly addNameRange     '2.0.0',
+98 silly addNameRange     '2.0.1',
+98 silly addNameRange     '2.0.2',
+98 silly addNameRange     '2.0.3',
+98 silly addNameRange     '2.0.4',
+98 silly addNameRange     '2.0.5',
+98 silly addNameRange     '2.0.6',
+98 silly addNameRange     '2.0.7',
+98 silly addNameRange     '2.0.8',
+98 silly addNameRange     '2.0.9',
+98 silly addNameRange     '2.1.0',
+98 silly addNameRange     '2.2.0',
+98 silly addNameRange     '2.2.1',
+98 silly addNameRange     '2.3.0',
+98 silly addNameRange     '2.3.1',
+98 silly addNameRange     '2.3.2',
+98 silly addNameRange     '2.3.3',
+98 silly addNameRange     '2.3.4',
+98 silly addNameRange     '2.3.5',
+98 silly addNameRange     '2.4.0' ] ]
+99 verbose addNamed [ 'nan', '2.4.0' ]
+100 verbose addNamed [ '2.4.0', '2.4.0' ]
+101 silly lockFile 5e286f4c-nan-2-4-0 nan@2.4.0
+102 verbose lock nan@2.4.0 /home/deadpool/.npm/5e286f4c-nan-2-4-0.lock
+103 silly lockFile 5e286f4c-nan-2-4-0 nan@2.4.0
+104 silly lockFile 5e286f4c-nan-2-4-0 nan@2.4.0
+105 silly lockFile b61dfd9c-nan-2-0-0 nan@>=2.0.0
+106 silly lockFile b61dfd9c-nan-2-0-0 nan@>=2.0.0
+107 silly resolved [ { name: 'nan',
+107 silly resolved     version: '2.4.0',
+107 silly resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 6 compatibility',
+107 silly resolved     main: 'include_dirs.js',
+107 silly resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+107 silly resolved     scripts:
+107 silly resolved      { test: 'tap --gc --stderr test/js/*-test.js',
+107 silly resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+107 silly resolved        docs: 'doc/.build.sh' },
+107 silly resolved     contributors:
+107 silly resolved      [ [Object],
+107 silly resolved        [Object],
+107 silly resolved        [Object],
+107 silly resolved        [Object],
+107 silly resolved        [Object],
+107 silly resolved        [Object],
+107 silly resolved        [Object] ],
+107 silly resolved     devDependencies:
+107 silly resolved      { bindings: '~1.2.1',
+107 silly resolved        commander: '^2.8.1',
+107 silly resolved        glob: '^5.0.14',
+107 silly resolved        'node-gyp': '~3.0.1',
+107 silly resolved        'readable-stream': '^2.1.4',
+107 silly resolved        tap: '~0.7.1',
+107 silly resolved        xtend: '~4.0.0' },
+107 silly resolved     license: 'MIT',
+107 silly resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+107 silly resolved     homepage: 'https://github.com/nodejs/nan#readme',
+107 silly resolved     _id: 'nan@2.4.0',
+107 silly resolved     _shasum: 'fb3c59d45fe4effe215f0b890f8adf6eb32d2232',
+107 silly resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.4.0.tgz',
+107 silly resolved     _from: 'nan@>=2.0.0',
+107 silly resolved     _npmVersion: '3.3.6',
+107 silly resolved     _nodeVersion: '5.0.0',
+107 silly resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+107 silly resolved     dist:
+107 silly resolved      { shasum: 'fb3c59d45fe4effe215f0b890f8adf6eb32d2232',
+107 silly resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.4.0.tgz' },
+107 silly resolved     maintainers: [ [Object], [Object] ],
+107 silly resolved     _npmOperationalInternal:
+107 silly resolved      { host: 'packages-16-east.internal.npmjs.com',
+107 silly resolved        tmp: 'tmp/nan-2.4.0.tgz_1468158679820_0.6951719264034182' },
+107 silly resolved     directories: {},
+107 silly resolved     readme: 'ERROR: No README data found!' } ]
+108 info install nan@2.4.0 into /home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep
+109 info installOne nan@2.4.0
+110 verbose node_modules/sleep/node_modules/nan unbuild
+111 verbose tar unpack /home/deadpool/.npm/nan/2.4.0/package.tgz
+112 silly lockFile c7343833-e-modules-sleep-node-modules-nan tar:///home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep/node_modules/nan
+113 verbose lock tar:///home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep/node_modules/nan /home/deadpool/.npm/c7343833-e-modules-sleep-node-modules-nan.lock
+114 silly lockFile d6ad8d9e-adpool-npm-nan-2-4-0-package-tgz tar:///home/deadpool/.npm/nan/2.4.0/package.tgz
+115 verbose lock tar:///home/deadpool/.npm/nan/2.4.0/package.tgz /home/deadpool/.npm/d6ad8d9e-adpool-npm-nan-2-4-0-package-tgz.lock
+116 silly gunzTarPerm modes [ '755', '644' ]
+117 silly gunzTarPerm extractEntry package.json
+118 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+119 silly gunzTarPerm extractEntry README.md
+120 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+121 silly gunzTarPerm extractEntry include_dirs.js
+122 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+123 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+124 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+125 silly gunzTarPerm extractEntry CHANGELOG.md
+126 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+127 silly gunzTarPerm extractEntry LICENSE.md
+128 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+129 silly gunzTarPerm extractEntry doc/node_misc.md
+130 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+131 silly gunzTarPerm extractEntry doc/asyncworker.md
+132 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+133 silly gunzTarPerm extractEntry doc/callback.md
+134 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+135 silly gunzTarPerm extractEntry doc/converters.md
+136 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+137 silly gunzTarPerm extractEntry doc/errors.md
+138 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+139 silly gunzTarPerm extractEntry doc/maybe_types.md
+140 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+141 silly gunzTarPerm extractEntry doc/methods.md
+142 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+143 silly gunzTarPerm extractEntry doc/new.md
+144 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+145 silly gunzTarPerm extractEntry doc/buffers.md
+146 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+147 silly gunzTarPerm extractEntry doc/object_wrappers.md
+148 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 420 ]
+149 silly gunzTarPerm extractEntry doc/persistent.md
+150 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+151 silly gunzTarPerm extractEntry doc/scopes.md
+152 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+153 silly gunzTarPerm extractEntry doc/script.md
+154 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+155 silly gunzTarPerm extractEntry doc/string_bytes.md
+156 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+157 silly gunzTarPerm extractEntry doc/v8_internals.md
+158 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+159 silly gunzTarPerm extractEntry doc/v8_misc.md
+160 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+161 silly gunzTarPerm extractEntry nan.h
+162 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+163 silly gunzTarPerm extractEntry nan_callbacks.h
+164 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+165 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+166 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+167 silly gunzTarPerm extractEntry nan_converters.h
+168 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+169 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+170 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+171 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+172 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+173 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+174 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+175 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+176 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+177 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+178 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+179 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+180 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+181 silly gunzTarPerm extractEntry nan_new.h
+182 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+183 silly gunzTarPerm extractEntry nan_object_wrap.h
+184 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+185 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+186 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+187 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+188 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+189 silly gunzTarPerm extractEntry nan_string_bytes.h
+190 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+191 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+192 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 420 ]
+193 silly gunzTarPerm extractEntry nan_weak.h
+194 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+195 silly gunzTarPerm extractEntry tools/package.json
+196 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+197 silly gunzTarPerm extractEntry tools/README.md
+198 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+199 silly gunzTarPerm extractEntry tools/1to2.js
+200 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+201 silly lockFile c7343833-e-modules-sleep-node-modules-nan tar:///home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep/node_modules/nan
+202 silly lockFile c7343833-e-modules-sleep-node-modules-nan tar:///home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep/node_modules/nan
+203 silly lockFile d6ad8d9e-adpool-npm-nan-2-4-0-package-tgz tar:///home/deadpool/.npm/nan/2.4.0/package.tgz
+204 silly lockFile d6ad8d9e-adpool-npm-nan-2-4-0-package-tgz tar:///home/deadpool/.npm/nan/2.4.0/package.tgz
+205 info preinstall nan@2.4.0
+206 verbose readDependencies using package.json deps
+207 verbose readDependencies using package.json deps
+208 silly resolved []
+209 verbose about to build /home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep/node_modules/nan
+210 info build /home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep/node_modules/nan
+211 verbose linkStuff [ false,
+211 verbose linkStuff   false,
+211 verbose linkStuff   false,
+211 verbose linkStuff   '/home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep/node_modules' ]
+212 info linkStuff nan@2.4.0
+213 verbose linkBins nan@2.4.0
+214 verbose linkMans nan@2.4.0
+215 verbose rebuildBundles nan@2.4.0
+216 info install nan@2.4.0
+217 info postinstall nan@2.4.0
+218 verbose about to build /home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep
+219 info build /home/deadpool/Proyectos/NODE/Cerradura/node_modules/sleep
+220 verbose linkStuff [ false,
+220 verbose linkStuff   false,
+220 verbose linkStuff   false,
+220 verbose linkStuff   '/home/deadpool/Proyectos/NODE/Cerradura/node_modules' ]
+221 info linkStuff sleep@3.0.1
+222 verbose linkBins sleep@3.0.1
+223 verbose linkMans sleep@3.0.1
+224 verbose rebuildBundles sleep@3.0.1
+225 verbose rebuildBundles [ 'nan' ]
+226 info install sleep@3.0.1
+227 verbose unsafe-perm in lifecycle true
+228 info sleep@3.0.1 Failed to exec install script
+229 verbose node_modules/sleep unbuild
+230 warn This failure might be due to the use of legacy binary "node"
+231 warn For further explanations, please read
+/usr/share/doc/nodejs/README.Debian
+232 info preuninstall sleep@3.0.1
+233 info uninstall sleep@3.0.1
+234 verbose true,/home/deadpool/Proyectos/NODE/Cerradura/node_modules,/home/deadpool/Proyectos/NODE/Cerradura/node_modules unbuild sleep@3.0.1
+235 info postuninstall sleep@3.0.1
+236 error sleep@3.0.1 install: `node-gyp rebuild`
+236 error Exit status 1
+237 error Failed at the sleep@3.0.1 install script.
+237 error This is most likely a problem with the sleep package,
+237 error not with npm itself.
+237 error Tell the author that this fails on your system:
+237 error     node-gyp rebuild
+237 error You can get their info via:
+237 error     npm owner ls sleep
+237 error There is likely additional logging output above.
+238 error System Linux 3.16.0-4-amd64
+239 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "sleep"
+240 error cwd /home/deadpool/Proyectos/NODE/Cerradura
+241 error node -v v0.10.29
+242 error npm -v 1.4.21
+243 error code ELIFECYCLE
+244 verbose exit [ 1, true ]

@@ -1,0 +1,30 @@
+extends ./layout.pug
+block contenido 
+	div(align="center")
+		form(action="/sessions" method="POST")
+			div
+				h2 Ingresa tus datos
+				label(for="user") Usuario
+				input(type="text",
+					name="user",
+					placeholder="user",
+					id="user"
+					required
+				)
+				br
+				label(for="password") Password
+				input(type="password",
+					name="password",
+					placeholder="password",
+					id="password"
+					required
+				)
+				br
+				input(type="submit" value="Enviar")
+			div(id="status")
+				h3!=status
+
+
+
+		
+

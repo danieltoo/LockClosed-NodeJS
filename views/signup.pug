@@ -1,0 +1,59 @@
+extends ./layout.pug
+block contenido 
+
+	form(action="/users_admin",method="POST")
+		div
+			h2 Ingrese sus datos
+			label(for="username") Username
+			input(type="text",
+				name="username",
+				placeholder="Username",
+				id="username"
+			)
+		div
+			label(for="telefono") Telefono
+			input(type="text",
+				name="telefono",
+				placeholder="telefono",
+				id="telefono"
+			)
+		div
+			label(for="facebook") Facebook
+			input(type="text",
+				name="facebook",
+				placeholder="facebook",
+				id="facebook"
+			)
+		div
+			label(for="email") Email
+			input(type="text",
+				name="email",
+				placeholder="Email",
+				id="email"
+			)
+		div
+			label(for="password") Password
+			input(type="password",
+				name="password",
+				placeholder="password",
+				id="password"
+			)
+		div
+			label(for="password_confirmation") Confima tu Password
+			input(type="password",
+				name="password_confirmation",
+				placeholder="Confirmacion",
+				id="password_confirmation",
+				onkeyup="revisa()"
+			)
+		div(id="revisado")
+
+		div
+			input(type="submit" value="Enviar")
+
+
+	
+		
+
+		
+

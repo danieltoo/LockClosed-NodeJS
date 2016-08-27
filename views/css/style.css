@@ -1,0 +1,126 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	background-color: #f9f9f9;
+}
+#content{
+	background-color: grey;
+	color: white;
+	border-radius: 14px 14px 14px 14px;
+	-moz-border-radius: 14px 14px 14px 14px;
+	-webkit-border-radius: 14px 14px 14px 14px;
+	border-color: black;
+}
+img.im{
+	border-radius: 25px 25px 25px 25px;
+	-moz-border-radius: 25px 25px 25px 25px;
+	-webkit-border-radius: 25px 25px 25px 25px;
+}
+footer{
+	color: white;
+	background-color: black;
+}
+/*********************Menú */
+#check{
+	display: none;
+}
+#icon{
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 100;
+}
+.barra{
+	background-color: #333;
+	height: 100%;
+	width: 300px;
+	position: absolute;
+	transition: all .2s linear;
+	left: -300px;
+}
+nav{
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+nav a{
+	text-decoration: none;
+}
+.link{
+	background-color: #494950;
+	padding: 20px;
+	font-family: 'Arial';
+	font-size: 12pt;
+	transition: all .2s linear;
+	color:#f4f4f9;
+	border-bottom: 2px solid #222 ;
+	opacity: 0;
+	margin-top: 200px;
+}
+.title{
+	background-color: black;
+	padding: 20px;
+	font-family: 'Arial';
+	font-size: 12pt;
+	transition: all .2s linear;
+	color:#f4f4f9;
+	border-bottom: 2px solid #222 ;
+	opacity: 0;
+	margin-top: 200px;
+}
+.link:hover{
+	background-color: #050542;
+}
+#check:checked ~ .barra{
+	transform: translateX(300px);
+	z-index: 50;
+}
+
+#check:checked ~ .barra  nav a .link,.title{
+	opacity: 1;
+	margin-top: 0;
+	transition-delay: .2s;
+}
+
+/*******************Slide*/
+.galeria{
+	margin: 0px auto;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+
+}
+
+.fot{
+	position: absolute;
+	opacity: 0;
+	animation-name: anima;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+@keyframes anima{
+	25%{
+		opacity: 1;
+		transform:scale(1.1,1.1);
+	}
+	50%{
+		opacity: 0;
+	}
+}
+.fot:nth-child(1){
+
+}
+.fot:nth-child(2){
+	animation-delay: 5s;
+}
+.fot:nth-child(3){
+	animation-delay: 10s;
+}
+.fot:nth-child(4){
+	animation-delay: 15s;
+}
+/*************************/
