@@ -7,7 +7,7 @@ var session = require("express-session");
 var router_app=require("./router_user");
 var session_midle = require("./middlewares/session");
 
-var token = 'token';
+var token = 'token'; //numero de token del bot de telegram 
 var TelegramBot = require('node-telegram-bot-api');
 var bot = new TelegramBot(token, {polling: true});
 
